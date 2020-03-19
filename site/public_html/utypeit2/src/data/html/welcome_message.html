@@ -1,0 +1,422 @@
+<style type="text/css">
+#CookbookBasic {
+	display: block;
+	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	margin-bottom: 100px;
+}
+#CookbookBasic h1 {
+	font-family: MuseoSlab-500;
+	font-size: 24px;
+	font-style: normal;
+	line-height: 120%;
+	color: #09F;
+}
+#CookbookBasic ol {
+	margin: 5px 0 0 10px; /* top, right, bottom, left (clockwise)*/
+	list-style-position: inside;
+}
+#CookbookBasic ol li {
+	margin: 5px 0 5px 0; /* top, right, bottom, left (clockwise)*/
+}
+#CookbookBasic p {
+	text-align: left;
+	font-size: 14px;
+}
+#CookbookBasic h4 {
+	font-weight: bold;
+	font-size: 16px;
+}
+#valuePoints {
+	background: #efefef;
+	border-collapse: separate;
+	border-spacing: 4px 0;
+	/*border: 1px #333333 solid;*/
+	padding: 4px 0 4px 0;
+}
+#valuePoints th, #valuePoints td {
+	padding: 8px;
+}
+#valuePoints th {
+	font-size: 16pt;
+	width: 33%;
+	text-align: center;/*border-top: 1px #333333 solid;
+	border-right: 1px #333333 solid;
+	border-left: 1px #333333 solid;*/
+}
+#valuePoints td {
+	text-align: left;/*border-bottom: 1px #333333 solid;
+	border-right: 1px #333333 solid;
+	border-left: 1px #333333 solid;*/
+}
+.imgNote {
+	display: block;
+	position: absolute;
+	top: 135px;
+	right: 23px;
+	margin: 0 0 0 396px;
+	padding: 8px;
+	width: 350px;
+	background: #ce5253;
+	border-top: 4px #ebba62 solid;
+	border-left: 4px #ebba62 solid;
+	border-right: 4px #ebba62 solid;
+	border-bottom: 4px #ebba62 solid;
+	/*background: rgb(153,180,98);
+	border-left: 8px #FFF2BE  solid;
+	border-top: 8px #FFF2BE  solid;
+	border-bottom: 8px #FFF2BE  solid;*/
+	font-family: Museo-300;/*MuseoSlab-500;*/
+	font-size: 14px;
+	color: #ffffff;
+	text-align: center;
+	-webkit-box-shadow: inset 0 0 5px 5px rgba(0,0,0,0.2);
+	box-shadow: inset 0 0 5px 5px rgba(0,0,0,0.2);
+}
+.imgNote a {
+	color: #FFFFFF;
+}
+.imgNote a:hover {
+	color: #99B462;
+}
+.imgNote h2 {
+	font-family: MuseoSlab-500;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 21px;
+}
+.imgNote h3 {
+	font-family: Museo-300;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 8px 0 8px 0;
+}
+.steps {
+	background: #efefef;
+	padding: 8px;
+	width: 754px;
+}
+#steps h4 {
+	text-align: center;
+}
+#steps img {
+	display: block;
+	margin: 0 auto;
+}
+.listWrap {
+	width: 100%;
+}
+.list {
+	margin: 0 auto;
+	width: 90%;
+}
+.list ul {
+	font-size: 1.2em !important;
+	margin-top: 10px;
+}
+.col-12 {
+	width: 100%;
+	float: left;
+}
+.col-8-left {
+	width: 58%;
+	float: left;
+	margin-right: 2%;
+	padding-top: 20px;
+}
+.col-4-left {
+	width: 40%;
+	float: left;
+}
+.webinarMessageTitle {
+	background-color: #ef6a39;
+	padding: 2px 0px 2px 0px;
+	text-align: center;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+	color: #ffffff;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.webinarMessageTitle h1 {
+	margin: 0 auto;
+	padding: 5px 0;
+}
+.webinarMessage {
+	margin-top: 20px;
+	padding: 0px 0px 20px 0px;
+	border: 3px solid #ef6a39;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	background-color: #fcbb5b;
+}
+.webinarMessage h2 {
+	margin: 0 auto;
+	padding: 15px 0 0 0;
+	line-height: 1em;
+}
+.webinarMessage h3 {
+	margin: 0 auto;
+	padding: 5px 0 20px 0;
+	line-height: 1.1em;
+}
+.text-center {
+	text-align: center;
+}
+.padLR {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.submitBTN {
+	background-color: #bf1231;
+	padding: 8px 25px 8px 25px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.submitBTN:hover {
+	background-color: #ef6a39;
+}
+.bullets {
+	padding-left: 20px;
+	list-style: disc;
+}
+h1, h2, h3, h4, h5, p, ul, li {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1em;
+}
+h1 {
+	font-size: 2em !important;
+}
+h3 {
+	font-size: 1.4em !important;
+}
+ul, li {
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.1em;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+.contentWrap {
+	-webkit-box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
+	box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	padding: 0px;
+	margin-bottom: 10px;
+}
+.contentMessage {
+	-webkit-box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
+	box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	padding: 0px 0px 20px 0px;
+	margin-bottom: 50px;
+	margin-right:0px;
+	width:50%;
+	float:left;
+	height: 210px;
+}
+.contentWeType {
+	width:35%;
+	float:left;
+	margin-left:20px;
+	padding:10px 15px 10px 15px;
+	background-color: #64bcc8;
+	color:#ffffff;
+	height: 130px;
+	-webkit-box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
+	box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+}
+
+
+.headline {
+	background-image: url("http://dev.cbp.ctcsdev.com/wp-content/uploads/2015/08/CTA-Linen-Red.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: 100%;
+	-moz-background-size: cover;
+	background-size: 100%;
+	background-size: cover;
+	height: 80px;
+	-webkit-border-radius: 15px 15px 0 0;
+	border-radius: 15px 15px 0 0;
+}
+.headline h1 {
+	color: #ffffff !important;
+	padding-top: 20px !important;
+}
+.padLR {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+</style>
+<title>
+Welcome to U-Type-It™
+<em>Online</em>
+</title>
+
+<body>
+  <!--Main Message-->
+  <!--<div class="contentWrap" style="background-color:#ef6a39;">
+  <div style=" clear: left; padding:10px 30px; margin-bottom:10px; "> 
+  <h2 style="text-align:center; color:#ffffff; line-height:1.2em !important;">Cookbook Publishers is undergoing scheduled maintenance the afternoon of July 15 which will affect phone service and U-Type-It&#8482; <em>Online</em> for a short period of time.
+<br>
+We apologize for any inconvenience.</h2>
+</div>
+  <div style="clear:both; width:90%;padding-top:0px;"> </div>
+  </div>-->
+
+<div class="contentWrap">
+  <div class="headline">
+    <h1 style="margin:0;padding:0 0 5px 0;font-size:1.7em;line-height:1.1em;text-align:center; color:#2d8ba0">Begin entering your recipes with U-Type-It<span style="font-size: 8px; vertical-align: super">TM</span> <em>Online!</em></h1>
+  </div>
+  
+<!--Main Image-->
+  <div class="padLR">
+    <div  class="col-8-left"> <img src="media/images/home_img.jpg" alt="" />
+    <div style="margin-top:20px;">
+      <h3 style="margin:0;padding:0;font-size:1em;line-height:1em;text-align:center;"><strong>With our easy-to-use software, you will:</strong></h3>
+      <span style="margin:0;padding:0;font-size:1em;line-height:1em;text-align:left;">
+      <div class="listWrap">
+        <div class="list">
+          <center>
+            <table>
+              <tr>
+                <td><ul style="list-style: disc;">
+                    <li>Save time</li>
+                    <li>Make logins for friends & family</li>
+                  </ul></td>
+                <td><ul style="list-style:disc;">
+                    <li> Get your books faster </li>
+                    <li>Earn a discount </li>
+                  </ul></td>
+              </tr>
+            </table>
+          </center></div>
+          
+          <div class="webinarMessage ">
+        <div class="webinarMessageTitle">
+          <h1>NEED HELP?</h1>
+        </div>
+        <h2 class="text-center">
+          <iframe width="280" height="158" src="https://www.youtube.com/embed/bEhiuSS6W68" frameborder="0" allowfullscreen></iframe>
+        </h2>
+        <div class="padLR">
+          <p class="text-center" style="margin-bottom:0px;"> Here is our latest tutorial on how easy it is to enter your recipes. </p>
+        </div>
+      </div>
+          
+        </div>
+      </span></div>
+       </div>
+    
+    <!--Left Sidebar Announcement-->
+    <div class="col-4-left">
+      
+      
+      <div class="" style="float:left; width:; font-family: 'PT Sans', Helvetica, Arial, Lucida, sans-serif; display:block; margin-top:20px;">
+	<div class="et_pb_module et-waypoint et_pb_image et_pb_animation_fade_in roundedTop et_pb_image_2 et_always_center_on_mobile et-animated" style="">
+		<img src="http://dev.cbp.ctcsdev.com/wp-content/uploads/Ad-Image-HappyThanksgiving.jpg" alt="Get Ready for Independence Day Cooking" style="width:100%; display:block;border-top:15px solid #9eb35c; border-radius:15px 15px 0px 0px; border-left:1px solid #9eb35c;border-right:1px solid #9eb35c;margin-bottom:0px;padding-bottom:0px;">
+	</div>
+	
+	<div class="" style="background-color:#9eb35c;margin-top:0px;padding-top:0px; border-left:1px solid #9eb35c;border-right:1px solid #9eb35c; display:block;">
+	
+	<div style="background: -moz-linear-gradient(top, rgba(255,255,255,0.65) 0%, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0.65) 0%,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,0.65) 0%,rgba(255,255,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6ffffff', endColorstr='#00ffffff',GradientType=0 );} ">
+		<h1 style="text-align: center;padding:0 15px; color:#eeeeee; font-family:'museo-slab','Droid Serif',Georgia,'Times New Roman',sans-serif; font-weight: 500; line-height:1.2em; margin:0px auto; padding-top:20px;">Receive Books By Thanksgiving!</h1>
+		<p style="padding:0px 15px; text-align:center;margin:0 auto;color:#eeeeee;">Submit your order by these deadline dates have books for Holiday sales!</p>
+	</div>
+
+	</div> <!-- .et_pb_text -->
+		<div class="" style="background-color: #9eb35c; text-align:center;padding-top:12px;padding-bottom:20px;border-radius:0px 0px 15px 15px;">
+			<div style="padding-top:20px;padding-bottom:10px;">
+			<a class="submitBTN" style="text-decoration: none; background-color:#a3b162;padding:8px 18px 8px 18px;border:1px solid #ffffff;color:#ffffff;" href="http://dev.cbp.ctcsdev.com/pricing/production-deadlines/" onMouseOver="this.style.backgroundColor='#ef6a39'" onMouseOut="this.style.backgroundColor='#bf1231'">CHECK DATES</a>
+			</div>
+  </div>
+</div>
+      
+      
+      
+    </div>
+  </div>
+  
+  <!--Main Message-->
+  <div style="clear:both; display:block; width:90%;padding-top:20px;"> </div>
+</div>
+
+<div style="clear:both;">&nbsp;</div>
+
+  <!--Production Message-->
+<div class="contentAlert" style=" padding:0px; margin-bottom:200px;">
+<!--<div class="contentMessage" style="
+background-color: rgba(131,157,204,0.91);
+padding-top: 20px !important;
+padding-right: 20px !important;
+padding-bottom: 0px !important;
+padding-left: 20px !important;
+margin-top: 0px !important;
+margin-right: 0% !important;
+margin-bottom: 0px !important;
+margin-left: 0% !important;
+border-top: solid 4px #50599c;
+border-bottom: solid 4px #50599c;
+border-left: solid 4px #50599c;
+border-right: solid 4px #50599c;
+padding-bottom: 0px;
+-webkit-border-radius: 20px 20px 20px 20px;
+border-radius: 20px 20px 20px 20px; color:#ffffff;height:260px;">
+			
+<h3 style="text-align: center; margin:0; padding-bottom:5px; font-size:1.9em !important;">
+<strong>Important Production Deadlines</strong></h3>
+<p style="margin:0; padding-bottom:5px">If you are thinking about creating a cookbook around certain calendar holidays, we offer the following deadlines for submitting your recipes to us in order to meet your date.</p>
+<table width="100%" border="1" cellspacing="0" cellpadding="0" style="padding-bottom:3px; color:#ffffff; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+  <tbody>
+  <tr>
+  <td></td>
+  <td style="text-align:center; background-color:#181818;padding-top:3px; padding-bottom:3px;">U-Type-It&#8482; <em>Online</em> Submit Order By:</td>
+  <td style="text-align:center; background-color: #5A5A5A">We Type Your Recipes Submit Order By:</td>
+  </tr>
+    <tr>
+      <td bgcolor="#FFFFFF" style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+      <p style="color:#ce5c1e">
+      <span style="text-transform:uppercase; font-size:1.2em; padding-left:5px; padding-right:8px;">Thanksgiving</span></p></td>
+      <td bgcolor="#FFFFFF">
+      <p style="padding:10px 5px; color:#000000; text-align:center;"><strong style="text-decoration:line-through">October 18</strong></p></td>
+      <td bgcolor="#FFFFFF"><p style="padding:10px 5px; color:#000000; text-align:center;"><strong style="text-decoration:line-through">September 20</strong></p></td>
+    </tr>
+    <tr>
+      <td bgcolor="#eeeeee"><p><span style="text-transform:uppercase; font-size:1.2em; color:#bf1231; padding-left:5px;">Christmas</span></p></td>
+      <td bgcolor="#eeeeee"><p style="padding:10px 5px;color:#000000; text-align:center;"><strong>November 11</strong></p></td>
+      <td bgcolor="#eeeeee"><p style="padding:10px 5px;color:#000000; text-align:center;"><strong>*November 9</strong></p></td>
+    </tr>
+    <tr><td colspan="3"  bgcolor="#FFFFFF" ><p style="color:#000000; padding:6px;">*If you want to use this special extension, you need to call us directly at 1.800.227.7282 so we can prioritize your incoming order. There will be a 10% Rush Fee (minimum $150) to expedite your order.</p></td></tr>
+  </tbody>
+</table>
+		
+</div>-->
+
+  <!--SEND US RECIPES-->
+<div class="contentWeType" style="border-top: solid 4px #008ca2;
+border-bottom: solid 4px #008ca2;
+border-left: solid 4px #008ca2;
+border-right: solid 4px #008ca2; width:90%;">
+<h3 style="text-align: center; margin:0; padding-bottom:5px; padding-top:20px; font-size:1.9em !important;">
+<strong>Don’t Want to Type your Recipes? <em>Let Us Do It!</em></strong></h3>
+<p style="text-align:center; padding-bottom:20px; font-size:1.2em;">Our staff can type the recipes you send us at <strong>no additional charge!</strong></p>
+<p style="text-align:center; font-size:1.2em;"><a href="http://dev.cbp.ctcsdev.com/create-cookbook/submit-recipes/"><span class="submitBTN">SEND US RECIPES</span></a></p> </div>
+	
+</div>
+
+
+</body>

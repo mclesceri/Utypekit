@@ -1,0 +1,351 @@
+
+# BEGIN All In One WP Security
+#AIOWPS_BLOCK_WP_FILE_ACCESS_START
+<Files license.txt>
+order allow,deny
+deny from all
+</files>
+<Files wp-config-sample.php>
+order allow,deny
+deny from all
+</Files>
+<Files readme.html>
+order allow,deny
+deny from all
+</Files>
+#AIOWPS_BLOCK_WP_FILE_ACCESS_END
+#AIOWPS_BASIC_HTACCESS_RULES_START
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+ServerSignature Off
+LimitRequestBody 10240000
+<Files wp-config.php>
+order allow,deny
+deny from all
+</Files>
+#AIOWPS_BASIC_HTACCESS_RULES_END
+#AIOWPS_DEBUG_LOG_BLOCK_HTACCESS_RULES_START
+<Files debug.log>
+order deny,allow
+deny from all
+</Files>
+#AIOWPS_DEBUG_LOG_BLOCK_HTACCESS_RULES_END
+#AIOWPS_DISABLE_TRACE_TRACK_START
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+RewriteRule .* - [F]
+#AIOWPS_DISABLE_TRACE_TRACK_END
+#AIOWPS_FORBID_PROXY_COMMENTS_START
+RewriteCond %{REQUEST_METHOD} ^POST
+RewriteCond %{HTTP:VIA} !^$ [OR]
+RewriteCond %{HTTP:FORWARDED} !^$ [OR]
+RewriteCond %{HTTP:USERAGENT_VIA} !^$ [OR]
+RewriteCond %{HTTP:X_FORWARDED_FOR} !^$ [OR]
+RewriteCond %{HTTP:X_FORWARDED_HOST} !^$ [OR]
+RewriteCond %{HTTP:PROXY_CONNECTION} !^$ [OR]
+RewriteCond %{HTTP:XPROXY_CONNECTION} !^$ [OR]
+RewriteCond %{HTTP:HTTP_PC_REMOTE_ADDR} !^$ [OR]
+RewriteCond %{HTTP:HTTP_CLIENT_IP} !^$
+RewriteRule wp-comments-post\.php - [F]
+#AIOWPS_FORBID_PROXY_COMMENTS_END
+#AIOWPS_DENY_BAD_QUERY_STRINGS_START
+RewriteCond %{QUERY_STRING} ftp:     [NC,OR]
+RewriteCond %{QUERY_STRING} http:    [NC,OR]
+RewriteCond %{QUERY_STRING} https:   [NC,OR]
+RewriteCond %{QUERY_STRING} mosConfig [NC,OR]
+RewriteCond %{QUERY_STRING} ^.*(globals|encode|localhost|loopback).* [NC,OR]
+RewriteCond %{QUERY_STRING} (\;|'|\"|%22).*(request|insert|union|declare|drop) [NC]
+RewriteRule ^(.*)$ - [F,L]
+#AIOWPS_DENY_BAD_QUERY_STRINGS_END
+#AIOWPS_ADVANCED_CHAR_STRING_FILTER_START
+<IfModule mod_alias.c>
+RedirectMatch 403 \,
+RedirectMatch 403 \:
+RedirectMatch 403 \;
+RedirectMatch 403 \=
+RedirectMatch 403 \[
+RedirectMatch 403 \]
+RedirectMatch 403 \^
+RedirectMatch 403 \`
+RedirectMatch 403 \{
+RedirectMatch 403 \}
+RedirectMatch 403 \~
+RedirectMatch 403 \"
+RedirectMatch 403 \$
+RedirectMatch 403 \<
+RedirectMatch 403 \>
+RedirectMatch 403 \|
+RedirectMatch 403 \.\.
+RedirectMatch 403 \%0
+RedirectMatch 403 \%A
+RedirectMatch 403 \%B
+RedirectMatch 403 \%C
+RedirectMatch 403 \%D
+RedirectMatch 403 \%E
+RedirectMatch 403 \%F
+RedirectMatch 403 \%22
+RedirectMatch 403 \%27
+RedirectMatch 403 \%28
+RedirectMatch 403 \%29
+RedirectMatch 403 \%3C
+RedirectMatch 403 \%3E
+RedirectMatch 403 \%3F
+RedirectMatch 403 \%5B
+RedirectMatch 403 \%5C
+RedirectMatch 403 \%5D
+RedirectMatch 403 \%7B
+RedirectMatch 403 \%7C
+RedirectMatch 403 \%7D
+# COMMON PATTERNS
+Redirectmatch 403 \_vpi
+RedirectMatch 403 \.inc
+Redirectmatch 403 xAou6
+Redirectmatch 403 db\_name
+Redirectmatch 403 select\(
+Redirectmatch 403 convert\(
+Redirectmatch 403 \/query\/
+RedirectMatch 403 ImpEvData
+Redirectmatch 403 \.XMLHTTP
+Redirectmatch 403 proxydeny
+RedirectMatch 403 function\.
+Redirectmatch 403 remoteFile
+Redirectmatch 403 servername
+Redirectmatch 403 \&rptmode\=
+Redirectmatch 403 sys\_cpanel
+RedirectMatch 403 db\_connect
+RedirectMatch 403 doeditconfig
+RedirectMatch 403 check\_proxy
+Redirectmatch 403 system\_user
+Redirectmatch 403 \/\(null\)\/
+Redirectmatch 403 clientrequest
+Redirectmatch 403 option\_value
+RedirectMatch 403 ref\.outcontrol
+# SPECIFIC EXPLOITS
+RedirectMatch 403 errors\.
+RedirectMatch 403 config\.
+RedirectMatch 403 include\.
+RedirectMatch 403 display\.
+RedirectMatch 403 register\.
+Redirectmatch 403 password\.
+RedirectMatch 403 maincore\.
+RedirectMatch 403 authorize\.
+Redirectmatch 403 macromates\.
+RedirectMatch 403 head\_auth\.
+RedirectMatch 403 submit\_links\.
+RedirectMatch 403 change\_action\.
+Redirectmatch 403 com\_facileforms\/
+RedirectMatch 403 admin\_db\_utilities\.
+RedirectMatch 403 admin\.webring\.docs\.
+Redirectmatch 403 Table\/Latest\/index\.
+</IfModule>
+#AIOWPS_ADVANCED_CHAR_STRING_FILTER_END
+#AIOWPS_FIVE_G_BLACKLIST_START
+# 5G BLACKLIST/FIREWALL (2013)
+# @ http://perishablepress.com/5g-blacklist-2013/
+
+# 5G:[QUERY STRINGS]
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{QUERY_STRING} (\"|%22).*(<|>|%3) [NC,OR]
+RewriteCond %{QUERY_STRING} (javascript:).*(\;) [NC,OR]
+RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3) [NC,OR]
+RewriteCond %{QUERY_STRING} (\\|\.\./|`|='$|=%27$) [NC,OR]
+RewriteCond %{QUERY_STRING} (\;|'|\"|%22).*(union|select|insert|drop|update|md5|benchmark|or|and|if) [NC,OR]
+RewriteCond %{QUERY_STRING} (base64_encode|localhost|mosconfig) [NC,OR]
+RewriteCond %{QUERY_STRING} (boot\.ini|echo.*kae|etc/passwd) [NC,OR]
+RewriteCond %{QUERY_STRING} (GLOBALS|REQUEST)(=|\[|%) [NC]
+RewriteRule .* - [F]
+</IfModule>
+
+# 5G:[USER AGENTS]
+<IfModule mod_setenvif.c>
+# SetEnvIfNoCase User-Agent ^$ keep_out
+SetEnvIfNoCase User-Agent (binlar|casper|cmsworldmap|comodo|diavol|dotbot|feedfinder|flicky|ia_archiver|jakarta|kmccrew|nutch|planetwork|purebot|pycurl|skygrid|sucker|turnit|vikspider|zmeu) keep_out
+<limit GET POST PUT>
+Order Allow,Deny
+Allow from all
+Deny from env=keep_out
+</limit>
+</IfModule>
+
+# 5G:[REQUEST STRINGS]
+<IfModule mod_alias.c>
+RedirectMatch 403 (https?|ftp|php)\://
+RedirectMatch 403 /(https?|ima|ucp)/
+RedirectMatch 403 /(Permanent|Better)$
+RedirectMatch 403 (\=\\\'|\=\\%27|/\\\'/?|\)\.css\()$
+RedirectMatch 403 (\,|\)\+|/\,/|\{0\}|\(/\(|\.\.\.|\+\+\+|\||\\\"\\\")
+RedirectMatch 403 \.(cgi|asp|aspx|cfg|dll|exe|jsp|mdb|sql|ini|rar)$
+RedirectMatch 403 /(contac|fpw|install|pingserver|register)\.php$
+RedirectMatch 403 (base64|crossdomain|localhost|wwwroot|e107\_)
+RedirectMatch 403 (eval\(|\_vti\_|\(null\)|echo.*kae|config\.xml)
+RedirectMatch 403 \.well\-known/host\-meta
+RedirectMatch 403 /function\.array\-rand
+RedirectMatch 403 \)\;\$\(this\)\.html\(
+RedirectMatch 403 proc/self/environ
+RedirectMatch 403 msnbot\.htm\)\.\_
+RedirectMatch 403 /ref\.outcontrol
+RedirectMatch 403 com\_cropimage
+RedirectMatch 403 indonesia\.htm
+RedirectMatch 403 \{\$itemURL\}
+RedirectMatch 403 function\(\)
+RedirectMatch 403 labels\.rdf
+RedirectMatch 403 /playing.php
+RedirectMatch 403 muieblackcat
+</IfModule>
+
+# 5G:[REQUEST METHOD]
+<ifModule mod_rewrite.c>
+RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+RewriteRule .* - [F]
+</IfModule>
+#AIOWPS_FIVE_G_BLACKLIST_END
+#AIOWPS_BLOCK_SPAMBOTS_START
+<IfModule mod_rewrite.c>
+RewriteCond %{REQUEST_METHOD} POST
+RewriteCond %{REQUEST_URI} ^(.*)?wp-comments-post\.php(.*)$
+RewriteCond %{HTTP_REFERER} !^http(s)?://cookbookpublishers\.com [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^$
+RewriteRule .* http://127.0.0.1 [L]
+</IfModule>
+#AIOWPS_BLOCK_SPAMBOTS_END
+#AIOWPS_LOGIN_WHITELIST_START
+<FilesMatch "^(wp-login\.php)">
+Order Allow,Deny
+Allow from dev.cbp.ctcsdev.com
+Allow from 162.247.142.8
+Allow from 173.197.15.58
+Allow from 173.197.15.59
+Allow from 173.197.15.60
+Allow from 173.197.15.61
+Allow from 173.197.15.62
+Allow from 70.88.96.249
+Allow from 70.88.96.250
+Allow from 70.88.96.251
+Allow from 70.88.96.252
+Allow from 70.88.96.253
+Allow from 98.209.237.216
+</FilesMatch>
+#AIOWPS_LOGIN_WHITELIST_END
+# END All In One WP Security
+
+<files wp-config.php>
+order allow,deny
+deny from all
+</files>
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+AddType text/html .cfm
+redirect 301 /utypeit.cfm http://dev.cbp.ctcsdev.com/utypeit2
+redirect 301 /utypeit http://dev.cbp.ctcsdev.com/utypeit2
+redirect 301 /designCookbook/index.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/
+redirect 301 /about/index.cfm http://dev.cbp.ctcsdev.com/about/about-us/
+redirect 301 /theRecipe/index.cfm /create-your-cookbook/cover-styles/5-steps-for-success/
+redirect 301 /pricingAndProfits/pricechart.cfm http://dev.cbp.ctcsdev.com/pricing-profits/base-prices/
+redirect 301 /designCookbook/Covers/fcstd.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/covers/free-standard-covers/
+redirect 301 /downloadCenter/index.cfm http://dev.cbp.ctcsdev.com/downloads/
+redirect 301 /order/index.cfm http://dev.cbp.ctcsdev.com/order-a-free-kit/
+redirect 301 /UTYPEIT http://dev.cbp.ctcsdev.com/utypeit2
+redirect 301 /designCookbook/covers/index.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/covers/
+redirect 301 /designCookbook/recipePages/standard.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/recipe-pages/
+redirect 301 /designCookbook/covers/designYourOwn.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/covers/customer-designed-covers-2/
+redirect 301 /pricingAndProfits/index.cfm http://dev.cbp.ctcsdev.com/pricing-profits/its-profitable/
+redirect 301 /theRecipe/StepByStep/index.cfm /create-your-cookbook/cover-styles/5-steps-for-success/
+redirect 301 /pricingAndProfits/specialsAndCoupons.cfm http://dev.cbp.ctcsdev.com/pricing-profits/coupons-discounts/
+redirect 301 /about/contactUs.cfm http://dev.cbp.ctcsdev.com/contact/
+redirect 301 /designCookbook/dividers/fcStandard.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/dividers/free-standard-dividers/
+redirect 301 /designCookbook/dividers/index.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/dividers/
+redirect 301 /designCookbook/dividers/tabbedFCfood.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/dividers/
+redirect 301 /designCookbook/bindersInkPaper/index.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/binders/
+redirect 301 /designCookbook/coverStyles/soft.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/covers/
+redirect 301 /designcookbook/personalPages/index.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/personal-pages/
+redirect 301 /designcookbook/personalPages/standard.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/personal-pages/
+redirect 301 /designCookbook/prodAndShipping/production.cfm http://dev.cbp.ctcsdev.com/order/deadlines-shipping-2/
+redirect 301 /designCookbook/UploadArtwork.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/covers/upload-artwork/
+redirect 301 /designCookbook/recipePages/standard.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/recipe-pages/
+redirect 301 /pricingAndProfits/designerOptions.cfm http://dev.cbp.ctcsdev.com/pricing-profits/designer-options/
+redirect 301 /theRecipe/StepbyStep/designCookbook.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/covers/5-steps-for-success/
+redirect 301 /theRecipe/successes/1.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/covers/5-steps-for-success/
+redirect 301 /map.cfm http://dev.cbp.ctcsdev.com/
+redirect 301 /designCookbook/usefulTools.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/design-resources/
+redirect 301 /downloadCenter/PDFs/misc/RecipeForm1.pdf http://dev.cbp.ctcsdev.com/wp-content/uploads/2012/05/RecipeForm1.pdf
+redirect 301 /theRecipe/stepByStep/faq.cfm http://dev.cbp.ctcsdev.com/order/faqs/
+redirect 301 /about/pioneersWpurpose.cfm http://dev.cbp.ctcsdev.com/about/about-us/
+redirect 301 /about/wordFromPresident.cfm http://dev.cbp.ctcsdev.com/about/about-us/
+redirect 301 /designCookbook/bindersInkPaper/paper.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/divider-styles/paper-stock-colors/
+redirect 301 /designCookbook/blackwhite/index.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/covers/designer-series-covers-black-white/
+redirect 301 /designCookbook/blackwhite/bw_covers.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/covers/designer-series-covers-black-white/
+redirect 301 /designCookbook/dividers/customerDesigned.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/dividers/customer-designed-dividers/
+redirect 301 /designCookbook/reorders/index.cfm http://dev.cbp.ctcsdev.com/order/time-to-reorder/
+redirect 301 /designCookbook/recipePages/optionalFeatures.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/recipe-pages/optional-features-for-recipe-pages/
+redirect 301 /designCookbook/mixmatch/mm_dividers.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/dividers/designer-series-dividers/
+redirect 301 /designCookbook/mixmatch/index.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/covers/designer-series-covers/
+redirect 301 /designCookbook/mixmatch/mm_instructions.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/covers/designer-series-covers/
+redirect 301 /designCookbook/bindersInkPaper/ink.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/dividers/divider-typestyles-ink-colors/
+redirect 301 /designCookbook/personalPages/additionalFree.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/personal-pages/additional-free-pages/
+redirect 301 /designCookbook/coverStyles/insideLiners.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/covers/
+redirect 301 /designCookbook/coverStyles/pad3ringBndr.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/covers/
+redirect 301 /downloadCenter/PDFs/orderforms/Mix&MatchSellSheet_CLH1.pdf http://dev.cbp.ctcsdev.com/wp-content/uploads/2012/05/MixMatchSellSheet_CLH1.pdf
+redirect 301 /order/international.cfm http://dev.cbp.ctcsdev.com/order/deadlines-shipping-2/
+redirect 301 /designCookbook/bindersInkPaper/options.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/binders/
+redirect 301 /order/ordering-information http://dev.cbp.ctcsdev.com/order-a-free-kit/
+redirect 301 /designCookbook/uploadartwork.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/covers/upload-artwork/
+redirect 301 /downloadCenter/PDFs/misc/ArtistReleaseForm1.pdf http://dev.cbp.ctcsdev.com//wp-content/uploads/2012/05/ArtistReleaseForm1.pdf
+redirect 301 /downloadCenter/PDFs/misc/RecipeManagementTips3.pdf http://dev.cbp.ctcsdev.com/wp-content/uploads/2012/05/RecipeManagementTips3.pdf
+redirect 301 /downloadCenter/PDFs/misc/AdvPacket11.pdf http://dev.cbp.ctcsdev.com/wp-content/uploads/2012/05/AdvPacket11.pdf
+redirect 301 /downloadCenter/PDFs/misc/MarketingTips.pdf http://dev.cbp.ctcsdev.com/wp-content/uploads/2012/05/MarketingTips.pdf
+redirect 301 /downloadCenter/PDFs/misc/StpByStepGuide.pdf http://dev.cbp.ctcsdev.com/wp-content/uploads/2012/05/StepByStepGuide.pdf
+redirect 301 /theRecipe/stepByStep/sellAdvertising.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/personal-pages/advertising-pages/
+redirect 301 /NewsletterLinks/May2012/AnchorsAweighWithCookbookPublishers.cfm http://dev.cbp.ctcsdev.com/anchors-aweigh-with-cookbook-publishers/
+redirect 301 /Specials/FreeRushServices.cfm http://dev.cbp.ctcsdev.com/pricing-profits/coupons-discounts/
+redirect 301 /65thAnniversaryRebate.cfm http://dev.cbp.ctcsdev.com/pricing-profits/coupons-discounts/
+redirect 301 /map.cfm http://dev.cbp.ctcsdev.com
+redirect 301 /theRecipe/successes/index.cfm http://dev.cbp.ctcsdev.com/pricing-profits/testimonials/
+redirect 301 /theRecipe/successes/3.cfm http://dev.cbp.ctcsdev.com/pricing-profits/testimonials/
+redirect 301 /theRecipe/successes/2.cfm http://dev.cbp.ctcsdev.com/pricing-profits/testimonials/
+redirect 301 /NewsletterLinks/May2012/CookbooksSince1947Part4.cfm http://dev.cbp.ctcsdev.com/counting-down-the-decades-the-silly-seventies/
+redirect 301 /NewsletterLinks/May2012/DearCookbookPublishers.cfm http://dev.cbp.ctcsdev.com/dear-cookbook-publishers/
+redirect 301 /NewsletterLinks/April2012/McDanielCreatesCookbook.cfm http://dev.cbp.ctcsdev.com/road-trip-anyone?/
+redirect 301 /NewsletterLinks/April2012/DomesticDivaAtCookbookPublishers.cfm http://dev.cbp.ctcsdev.com/domestic-diva-at-cookbook-publishers/
+redirect 301 /NewsletterLinks/documents/HotFudgePuddingCake.pdf http://dev.cbp.ctcsdev.com/recipes-from-our-cookbook-creations-newsletter/
+redirect 301 /NewsletterLinks/documents/ChocolateFondue.pdf http://dev.cbp.ctcsdev.com/recipes-from-our-cookbook-creations-newsletter/
+redirect 301 /NewsletterLinks/documents/ThreeBeanSalad.pdf http://dev.cbp.ctcsdev.com/recipes-from-our-cookbook-creations-newsletter/
+redirect 301 /NewsletterLinks/documents/SourCreamAppleCake.pdf http://dev.cbp.ctcsdev.com/recipes-from-our-cookbook-creations-newsletter/
+redirect 301 /NewsletterLinks/documents/TacoSoupRecipe.pdf http://dev.cbp.ctcsdev.com/recipes-from-our-cookbook-creations-newsletter/
+redirect 301 /NewsletterLinks/April2012/CookbooksSince1947Part3.cfm http://dev.cbp.ctcsdev.com/the-1960s-groovy-man/
+redirect 301 /NewsletterLinks/April2012/NewCoverandDividersAtCookbookPublishers.cfm http://dev.cbp.ctcsdev.com/new-recipes-in-bloom/
+redirect 301 /NewsletterLinks/March2012/HomeHeartHistoryCookbook.cfm http://dev.cbp.ctcsdev.com/historic-rural-hill-cookbook/
+redirect 301 /NewsletterLinks/March2012/CookbookPublishersSince1947Part2.cfm http://dev.cbp.ctcsdev.com/the-fabulous-fifties/
+redirect 301 /NewsletterLinks/March2012/CookbookWeddingFavor.cfm http://dev.cbp.ctcsdev.com/cookbook-wedding-favors/
+redirect 301 /NewsletterLinks/March2012/CookbookPublishersCallingCooks.cfm http://dev.cbp.ctcsdev.com/calling-all-cooks/
+redirect 301 /NewsletterLinks/February2012/CookbookPublishersSince1947.cfm http://dev.cbp.ctcsdev.com/the-year-was-1947/
+redirect 301 /NewsletterLinks/February2012/DesignYourOwnCookbook.cfm http://dev.cbp.ctcsdev.com/calling-all-divas/
+redirect 301 /NewsletterLinks/February2012/CupcakeCookbookFundraiser.cfm http://dev.cbp.ctcsdev.com/crazy-about-cupcakes/
+redirect 301 /NewsletterLinks/January2012/DynamicDuo.cfm http://dev.cbp.ctcsdev.com/dynamic-duo/
+redirect 301 /NewsletterLinks/January2012/TiftonRegional.cfm http://dev.cbp.ctcsdev.com/Tift-Regional-Medical-Center-Cookbook/
+redirect 301 /NewsletterLinks/January2012/GoodCookbook.cfm http://dev.cbp.ctcsdev.com/Curl-Up-With-A-Good-Cookbook/
+redirect 301 /NewsletterLinks/WhatCanYouDoWithARecipe.cfm http://dev.cbp.ctcsdev.com/
+redirect 301 /kitreqst.htm /order-a-free-kit/
+redirect 301 /about/ourguarantee.cfm /about/our-guarantee/
+redirect 301 /wp-content/uploads/2012/05/OrderForm2010_Web2.pdf /wp-content/uploads/2012/10/OrderForm_2012.pdf
+redirect 301 /designCookbook/bindersInkPaper/inkAndPaper.cfm http://dev.cbp.ctcsdev.com/create-your-cookbook/divider-styles/paper-stock-colors/
+redirect 301 /wp-content/uploads/2012/05/RecipeForm1.pdf /wp-content/uploads/2012/03/RecipeForm1-2012.pdf
+redirect 301 /downloadCenter/PDFs/misc/RecipeManagementTips.pdf /wp-content/uploads/2012/05/RecipeManagementTips3.pdf
+redirect 301 /create-your-cookbook/covers/upload-artwork/ /create-your-cookbook/cover-styles/upload-artwork/
+redirect 301 /theRecipe/stepByStep/index.cfm /create-your-cookbook/cover-styles/5-steps-for-success/
+redirect 301 /u-type-it-2-0/ http://dev.cbp.ctcsdev.com/utypeit2
+

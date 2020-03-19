@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cookbook id="22" format="traditional" continued="no" fillers="yes" filler_type="text" filler_set="Custom" index_order="alphabetical" contributor_index="yes" icons="no" nutritionals="yes" uti="yes" order_form="no" proof="n">
+  <cover>
+    <pdf_name>Test</pdf_name>
+    <pdf_tag>TestTag</pdf_tag>
+    <pdf_printed_liners>Family</pdf_printed_liners>
+    <pdf_paper_stock>Military</pdf_paper_stock>
+  </cover>
+  <dividers>
+    <divider_tag>Divider</divider_tag>
+    <divider_paper_stock>Military</divider_paper_stock>
+  </dividers>
+  <order_form>
+    <personal_wrapper>Yes</personal_wrapper>
+    <personal_nutritional_information>No</personal_nutritional_information>
+  </order_form>
+</cookbook>

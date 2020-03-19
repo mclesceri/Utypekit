@@ -1,0 +1,21 @@
+Image loading test:<br>
+<img src="//dev.cbp.ctcsdev.com/utypeit2/media/images/cookbook-logo-new2.png">
+<br>
+<br>
+Okay, so does that load?  Probably not, because referrers are being blocked in loading assets.  <a href="//dev.cbp.ctcsdev.com/utypeit2/media/images/cookbook-logo-new2.png" target="_blank" rel="noreferrer">try it, open a new tab with this image and it will work since we STOP the referrer from being sent</a>.
+
+<br><br>
+But when we add referrer information in, it doesn't work again.  <a href="//dev.cbp.ctcsdev.com/utypeit2/media/images/cookbook-logo-new2.png" target="_blank">try it, open a new tab with this image</a>
+<br><br>
+
+So, the issue has to do with blocking images (or other assets) that HAVE a referrer.  
+
+<hr>
+
+HOWEVER images with an absolute URL to non-secure (HTTP) work.
+<br>
+<img src="http:////dev.cbp.ctcsdev.com/utypeit2/media/images/cookbook-logo-new2.png">
+<br>
+
+Diagnosis: misconfiguration in server-level settings for SSL connections.
+

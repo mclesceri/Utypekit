@@ -1,0 +1,143 @@
+#boxes
+{
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 50;
+}
+.sideBox
+{
+	display: block;
+	position: absolute;
+	width: 180px;
+	height: 200px;
+	border: 1px #666666 solid;
+	border-radius: 8px 0 0 8px;
+	box-shadow: 1px 2px 2px #333;
+}
+.shown
+{
+	right: 10px;
+}
+.hidden
+{
+	right: -150px;
+}
+.sideTab
+{
+	display: block;
+	position: absolute;
+	left: -86px;
+	top: 85px;
+	width: 200px;
+	height: 29px;
+	margin: 0;
+	line-height: 30px;
+	-webkit-transform: rotate(-90deg); 
+	-moz-transform: rotate(-90deg);	
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	background:  #ef6a39;
+	border-radius: 8px 8px 0 0;
+	font-weight:  bold;
+	color: #FFFFFF;
+	cursor: pointer;
+	text-align: center;
+}
+.sideTab:hover
+{
+	background: #fcbb5b;
+	color: #562B00;
+}
+.sideContent
+{
+	display: block;
+	position: absolute;
+	left: 28px;
+	top: 0;
+	width: 154px;
+	height: 192px;
+	margin: 0;
+	padding: 4px;
+	background: #EFEFEF;
+	overflow: auto;
+}
+.sideContent p
+{
+	text-align: right;
+	font-size: 10px;
+	margin: 5px 0 10px 0;
+}
+/* COMMON ABBREVIATIONS */
+#common_abbreviations
+{
+	top: 0;
+}
+#abbr
+{
+	width: 130px;
+	border: 1px #999999 solid;
+}
+#abbr td
+{
+	border: 1px #999999 solid;
+	background: #FFFFFF;
+	font-size: 11px;
+	text-align: left;
+}
+
+/* SPECIAL CHARACTERS */
+#special_characters
+{
+	top: 210px;
+}
+
+#sc_content div
+{
+	display: inline-block;
+	
+	width: 29px;
+	height: 29px;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: center;
+	border: 1px #999999 solid;
+}
+#sc_content div a
+{
+	display: block;
+	background: #FFFFFF;
+	text-decoration: none;
+	color: #000000;
+}
+#sc_content div a:hover
+{
+	font-weight: bold;
+	background: #fff3c1;
+	color: #000000;
+} 
+.key
+{
+	font-weight: bold;
+}
+/* RECIPE ICONS */
+#recipe_icons
+{
+	top: 420px;	
+}
+#ri_content div
+{
+	display: inline-block;
+	position: relative;
+	width: 29px;
+	height: 29px;
+	text-align: center;
+	border: 1px #999999 solid;
+}
+#ri_content div img
+{
+	width: 24px;
+	height: 24px;
+	margin: 2px;
+	cursor: pointer;
+}

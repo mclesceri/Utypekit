@@ -1,0 +1,20 @@
+.kitOrder
+{
+	display: inline-block;
+	position: absolute;
+	top: 31px;
+	left: 300px;
+	width: 250px;
+	height: 83px;
+	background: url('../images/start-here-11.png') 0 -85px;
+	background-repeat:  no-repeat;
+	text-indent: -99999px;
+}
+.kitOrder:hover {
+	background-position: 0 8px;
+}
+.loginMessage
+{
+	color: #fff;
+	text-align: left;
+}

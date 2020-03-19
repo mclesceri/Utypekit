@@ -1,0 +1,10 @@
+
+.custom-error{
+	color:#FF0000;
+    display: block;
+}
+.order-head p{
+	color:#000;
+	padding:0.9rem 0 0 1.2rem;
+	font-weight: 500;
+}

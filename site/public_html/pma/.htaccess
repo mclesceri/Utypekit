@@ -1,0 +1,24 @@
+ # ALLOW USER BY IP
+<Limit GET POST>
+# Require all denied
+# # PrintComm
+# Require ip 70.88.96.249
+# Require ip 70.88.96.250
+# Require ip 70.88.96.251
+# Require ip 70.88.96.252
+# Require ip 70.88.96.253
+# # Cookbook
+# Require ip 173.197.15.58
+# Require ip 173.197.15.59
+# Require ip 173.197.15.60
+# Require ip 173.197.15.61
+# Require ip 173.197.15.62
+# # Logan
+# Require ip 136.63.237.218
+# # WebMechanix
+# Require ip 96.234.162.24
+# Require ip 96.244.209.11
+# # Wordfence auditor
+# Require ip 24.49.193.200
+#
+</Limit>

@@ -1,0 +1,250 @@
+@charset "UTF-8";
+/* CSS Document */
+/* REPORT ELEMENTS */
+div.reportOptions
+{
+	display: block;
+	position: relative;
+	width: 884px;
+	height: 25px;
+	padding: 10px 0 0 0 !important;
+	text-align: left;
+}
+div.reportOptions ul
+{
+	margin: 0;
+	padding: 0;
+}
+div.reportOptions ul li
+{
+	display: block;
+	position: relative;
+	float: left;
+	width: 150px;
+	height: 25px;
+	margin: 0 5px 0 0;
+	font-weight: bold;
+	background: #749DD2;
+	border-radius: 4px 4px 0 0;
+	font-size: 12px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 12px;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+div.reportOptions ul li:hover
+{
+	color: #000000;
+	background: #B2CAE8;
+}
+div.reportOptions ul li.active
+{
+	color: #000000;
+	background: #B2CAE8;
+}
+h3
+{
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 10px 0 10px 0;
+}
+h4
+{
+	display: block;
+	clear: both;
+	font-size: 1.25em;
+	font-weight: bold;
+	margin: 5px 0 5px 0;
+	padding: 4px;
+	color: #aaaaaa;
+	border-bottom: 1px #aaaaaa solid;
+}
+#breadcrumb
+{
+	display: inline-block;
+	width: 884px;
+	height: 30px;
+	padding: 4px;
+	margin: 5px 0 5px 0;
+	background: #CCCCCC;
+	border: 1px #333 solid;
+}
+#report
+{
+	display: inline-block;
+	width: 900px;
+	height: 100%;
+	padding: 0;
+	text-align: left;
+	line-height: 16px;
+}
+.report_item
+{
+	display: inline-block;
+	width: 884px;
+	padding: 8px;
+	border-bottom: 4px #333333 double;
+}
+.label
+{
+	display: block;
+	float: left;
+	position: relative;
+	font-size: 1em;
+	line-height: 14px;
+	color: #666666;
+	text-align: right;
+}
+.val
+{
+	display: block;
+	float: left;
+	position: relative;
+	margin: 0 0 0 5px;
+	text-align: left;
+}
+#id,#date_added,#added_by_type,#order_number,#title,#status,#name,#type,#first_name,#last_name,#login,#password,#phone,#email,#address1,#address2,#city,#state,#zip,#newsletter,#recipe_count,#last_recipe
+{
+	display: inline-block;
+	float: left;
+	margin: 0 0 10px 0;
+}
+#id
+{
+	width: 200px;
+	margin: 0 10px 10px 0;
+}
+#id .label
+{
+	width: 100px;
+}
+#date_added
+{
+	clear: right;
+}
+#added_by_type
+{
+	width: 884px;
+}
+#added_by_type .label
+{
+	width: 100px;
+}
+#order_number
+{
+	width: 200px;
+}
+#order_number .label
+{
+	width: 100px;
+}
+#title
+{
+	width: 200px;
+}
+#status
+{
+}
+#name
+{
+}
+#type
+{
+	margin: 0 0 10px 10px;
+}
+#first_name
+{
+	clear: left;
+}
+#first_name .label
+{
+	width: 100px;
+}
+#last_name
+{
+	margin: 0 0 10px 10px;
+}
+#login
+{
+	margin: 0 0 10px 10px;
+}
+#password
+{
+	margin: 0 0 10px 10px;
+}
+#phone
+{
+	clear: left;
+}
+#phone .label
+{
+	width: 100px;
+}
+#email
+{
+	margin: 0 0 10px 10px;
+}
+#address1
+{
+	clear: left;
+}
+#address1 .label
+{
+	width: 100px;
+}
+#address2
+{
+	clear: left;
+}
+#address2 .label
+{
+	width: 100px;
+}
+#city
+{
+	clear: left;
+}
+#city .label
+{
+	width: 100px;
+}
+#state
+{
+	margin: 0 0 10px 10px;
+}
+#zip
+{
+	margin: 0 0 10px 10px;
+}
+#newsletter
+{
+	margin: 0 0 10px 10px;
+}
+#recipe_count
+{
+
+}
+#recipe_count .label
+{
+	width: 100px;
+}
+#last_recipe
+{
+	margin: 0 0 10px 10px;
+}
+.report_select form
+{
+	display: inline-block;
+	float: left;
+	margin-right: 5px;
+}
+#report_results{
+	margin: 50px 20px 20px 20px;
+	padding: 20px;
+	height: 800px;
+	width: 90%;
+	background: #FFFFFF;
+	border: 1px #333 solid;
+	overflow: scroll;
+}

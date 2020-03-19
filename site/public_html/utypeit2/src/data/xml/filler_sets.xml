@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<fillers>
+	<text_fillers>
+		<set name="Food">
+			<filler>It's so beautifully arranged on the plate you just know someone's fingers have been all over it. - Julia Child</filler>
+			<filler>An optimist is a person who starts a new diet on Thanksgiving Day. -  Irv Kupcinet</filler>
+			<filler>Mincing your words makes it easier if you have to eat them later. -  Franklin P. Jones</filler>
+			<filler>Man does not live by words alone, despite the fact that sometimes he has to eat them. - Adlai Stevenson</filler>
+		</set>
+		<set name="Gardening">
+			<filler>True friendship is a plant of slow growth. - George Washington</filler>
+			<filler>The fragrance always stays in the hand that gives the rose. - Hada Bejar</filler>
+			<filler>Why not go out on a limb?  Isn't that where the fruit is? - Frank Scully</filler>
+			<filler>Good thoughts bear good fruit, bad thoughts bear bad fruit and man is his own gardener. - James Allen</filler>
+		</set>
+		<set name="In The Kitchen">
+			<filler>To remove the core from a head of lettuce, hit the core end once against the counter sharply. The core will loosen and pull out easily.</filler>
+			<filler>Lettuce and celery keep longer if you store them in paper bags instead of cellophane.</filler>
+		</set>
+		<set name="Inspirational">
+			<filler>Heaven means to be one with God. - Confucius</filler>
+			<filler>God gave you a gift of 86,000 seconds today.  Have you used one to say "thank you?" - William A. Ward</filler>
+			<filler>No man can be called friendless when he has God and the companionship of good books. - Elizabeth Barrett Browning</filler>
+			<filler>In prayer it is better to have a heart without words that words without a heart. - John Bunyan</filler>
+		</set>
+		<set name="Kids">
+			<filler>Adults are obsolete children. - Dr. Seuss</filler>
+			<filler>I have never let my schooling interfere with my education. - Mark Twain</filler>
+			<filler>Parents can plant magic in a child's mind through certain words spoken with some thrilling quality of voice, some uplift of the heart and spirit. - Robert MacNeil</filler>
+			<filler>Education is learning what you didn't even know you didn't know.  Daniel J. Boorstin</filler>
+		</set>
+		<set name="Patriotic">
+			<filler>America did not invent human rights.  In a very real sense human rights invented America. - Jimmy Carter</filler>
+			<filler>Never tell people how to do things.  Tell them what to do and they will surprise you with their ingenuity. - Gen. George S. Patton Jr.</filler>
+			<filler>Leadership is a potent combination of strategy and character.  But if you must be without one, be without strategy. - Gen. H. Norman Schwarzkopf</filler>
+			<filler>Patriotism is not a short frenzied burst of emotion, but the long and steady dedication of a lifetime. - Thomas Jefferson</filler>
+		</set>
+		<set name="Religious">
+			<filler>From where shall my help come?  My help comes from the LORD, who made heaven and earth. - Psalm 121:1a, 2</filler>
+			<filler>The Lord is my shepherd; I shall not want. - Psalm 23:1</filler>
+			<filler>To everything there is a season, and a time to every purpose under the heaven. - Ecclesiastes 3:1</filler>
+			<filler>Come unto me, all ye that labor and are heavy laden, and I will give you rest. - Matthew 11:28</filler>
+		</set>	
+		<set name="Custom">
+			<filler>The fillers you submit will be placed on the pages as indicated in your proof.</filler>		
+		</set>
+</text_fillers>
+	<image_fillers>
+		<set name="Educational">
+			<filler>
+				<thumbnail>Education_tn.jpg</thumbnail>
+				<image>Education.jpg</image>
+			</filler>
+		</set>
+		<set name="In The Kitchen">
+			<filler>
+				<thumbnail>InTheKitchen_tn.jpg</thumbnail>
+				<image>InTheKitchen.jpg</image>
+			</filler>
+		</set>
+		<set name="Food Art 1">
+			<filler>
+				<thumbnail>FoodArt1_tn.jpg</thumbnail>
+				<image>FoodArt1.jpg</image>
+			</filler>
+		</set>
+		<set name="Food Art 2">
+			<filler>
+				<thumbnail>NewFood_tn.jpg</thumbnail>
+				<image>NewFood.jpg</image>
+			</filler>
+		</set>
+		<set name="Musical">
+			<filler>
+				<thumbnail>Music_tn.jpg</thumbnail>
+				<image>Music.jpg</image>
+			</filler>
+		</set>
+		<set name="Patriotic">
+			<filler>
+				<thumbnail>Patriotic_tn.jpg</thumbnail>
+				<image>Patriotic.jpg</image>
+			</filler>
+		</set>
+		<set name="Religious">
+			<filler>
+				<thumbnail>Religious_tn.jpg</thumbnail>
+				<image>Religious.jpg</image>
+			</filler>
+		</set>
+
+		<set name="Vintage">
+			<filler>
+				<thumbnail>Vintage_tn.jpg</thumbnail>
+				<image>Vintage.jpg</image>
+			</filler>
+		</set>
+		<set name="Custom">
+			<filler>
+				<thumbnail>Custom_tn.jpg</thumbnail>
+				<image>Custom.jpg</image>
+			</filler>
+		</set>
+	</image_fillers>
+</fillers>

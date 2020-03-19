@@ -1,0 +1,6 @@
+#order_form ul
+{
+	list-style-type: square;
+	margin-left: 10px;
+	list-style-position: inside;
+}

@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#report_filter
+{
+	display: inline-block;
+	width: 884px;
+	min-height: 35px;
+	padding: 4px;
+	background: #DDDDDD;
+	border: 1px #333333 solid;
+}
+#report_filter div
+{
+	padding: 4px;
+	border-bottom: 1px #999999 solid;
+}
+#report_filter .header
+{
+	text-align: center;
+	background: #666666;
+	color: #FFFFFF;
+	margin: 0;
+	padding: 8px;
+	height: 20px;
+	font-size: 18px;
+}
+#report_filter table
+{
+	width: 100%;
+	border-collapse: collapse;
+}
+#report_filter th
+{
+	background: #999999;
+	border-bottom: 1px #333333 solid;
+}
+#report_filter td
+{
+	padding: 4px;
+}
+#report_filter label
+{
+	font-size: 11px;
+}
+#limit_set label
+{
+	display: block;
+	position: relative;
+	float: left;
+	width: 140px;
+	margin: 0 10px 0 0;
+}
+#limit_set .all
+{
+	display: block;
+	position: relative;
+	width: 100%;
+	float: left;
+	margin: 0  0 10px 0;
+}
+.input
+{
+	text-align: left;
+}
+.send
+{
+	text-align: right;
+}

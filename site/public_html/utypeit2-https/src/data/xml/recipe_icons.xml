@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<icons>
+	<icon>
+		<name>none</name>
+		<image>recipe_icons/icon_none.png</image>
+	</icon>
+	<icon>
+		<name>Cancer Ribbon</name>
+		<image>recipe_icons/icon_cancer_ribbon.png</image>
+	</icon>
+	<icon>
+		<name>Diabetic</name>
+		<image>recipe_icons/icon_diabetic.png</image>
+	</icon>
+	<icon>
+		<name>Freezes Well</name>
+		<image>recipe_icons/icon_freezes_well.png</image>
+	</icon>
+	<icon>
+		<name>Gluten-Free</name>
+		<image>recipe_icons/icon_gluten-free.png</image>
+	</icon>
+	<icon>
+		<name>Heart Healthy</name>
+		<image>recipe_icons/icon_heart_healthy.png</image>
+	</icon>
+	<icon>
+		<name>Heirloom</name>
+		<image>recipe_icons/icon_heirloom.png</image>
+	</icon>
+	<icon>
+		<name>Hot and Spicy</name>
+		<image>recipe_icons/icon_hot_and_spicy.png</image>
+	</icon>
+	<icon>
+		<name>In Memory</name>
+		<image>recipe_icons/icon_in_memory.png</image>
+	</icon>
+	<icon>
+		<name>International</name>
+		<image>recipe_icons/icon_international.png</image>
+	</icon>
+	<icon>
+		<name>Kids Recipes</name>
+		<image>recipe_icons/icon_kids_recipes.png</image>
+	</icon>
+	<icon>
+		<name>Low Fat</name>
+		<image>recipe_icons/icon_low_fat.png</image>
+	</icon>
+	<icon>
+		<name>Pets</name>
+		<image>recipe_icons/icon_pets.png</image>
+	</icon>
+	<icon>
+		<name>Quick and Easy</name>
+		<image>recipe_icons/icon_quick_and_easy.png</image>
+	</icon>
+	<icon>
+		<name>Slow Cooker</name>
+		<image>recipe_icons/icon_slow_cooker.png</image>
+	</icon>
+	<icon>
+		<name>Vegetarian</name>
+		<image>recipe_icons/icon_vegetarian.png</image>
+	</icon>
+</icons>

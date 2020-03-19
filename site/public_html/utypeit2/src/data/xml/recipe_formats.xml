@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<formats>
+	<format>
+		<name>Black Tie</name>
+		<description>Black Tie: Only available in recipes not continued</description>
+		<flag>rnc</flag>
+		<image1>recipe_formats/BlackTie_L1.jpg</image1>
+		<image2>recipe_formats/BlackTie_L2.jpg</image2>
+		<thumbnail1>recipe_formats/BlackTie_L1_tn.jpg</thumbnail1>
+		<thumbnail2>recipe_formats/BlackTie_L2_tn.jpg</thumbnail2>
+	</format>
+	<format>
+		<name>Casual</name>
+		<description>Casual: Only available in recipes not continued</description>
+		<flag>rnc</flag>
+		<image1>recipe_formats/Casual_L1.jpg</image1>
+		<image2>recipe_formats/Casual_L2.jpg</image2>
+		<thumbnail1>recipe_formats/Casual_L1_tn.jpg</thumbnail1>
+		<thumbnail2>recipe_formats/Casual_L2_tn.jpg</thumbnail2>
+	</format>
+	<format>
+		<name>CentSaver</name>
+		<description>CentSaver: Only available in recipes continued</description>
+		<flag>rc</flag>
+		<image1>recipe_formats/Centsaver_L1.jpg</image1>
+		<image2>recipe_formats/Centsaver_L2.jpg</image2>
+		<thumbnail1>recipe_formats/Centsaver_L1_tn.jpg</thumbnail1>
+		<thumbnail2>recipe_formats/Centsaver_L2_tn.jpg</thumbnail2>
+	</format>
+	<format>
+		<name>Classic</name>
+		<description>Classic: Available in both continued and not continued</description>
+		<flag>both</flag>
+		<image1>recipe_formats/Classic_L1.jpg</image1>
+		<image2>recipe_formats/Classic_L2.jpg</image2>
+		<thumbnail1>recipe_formats/Classic_L1_tn.jpg</thumbnail1>
+		<thumbnail2>recipe_formats/Classic_L2_tn.jpg</thumbnail2>
+	</format>
+	<format>
+		<name>EZ-Read</name>
+		<description>EZ-Read: Available in both continued and not continued</description>
+		<flag>both</flag>
+		<image1>recipe_formats/EZRead_L1.jpg</image1>
+		<image2>recipe_formats/EZRead_L2.jpg</image2>
+		<thumbnail1>recipe_formats/EZRead_L1_tn.jpg</thumbnail1>
+		<thumbnail2>recipe_formats/EZRead_L2_tn.jpg</thumbnail2>
+	</format>
+	<format>
+		<name>Fanciful</name>
+		<description>Fanciful: Only available in recipes not continued</description>
+		<flag>rnc</flag>
+		<image1>recipe_formats/Fanciful_L1.jpg</image1>
+		<image2>recipe_formats/Fanciful_L2.jpg</image2>
+		<thumbnail1>recipe_formats/Fanciful_L1_tn.jpg</thumbnail1>
+		<thumbnail2>recipe_formats/Fanciful_L2_tn.jpg</thumbnail2>
+	</format>
+	<format>
+		<name>Premiere</name>
+		<description>Premiere: Only available in recipes not continued</description>
+		<flag>rnc</flag>
+		<image1>recipe_formats/Premiere_L1.jpg</image1>
+		<image2>recipe_formats/Premiere_L2.jpg</image2>
+		<thumbnail1>recipe_formats/Premiere_L1_tn.jpg</thumbnail1>
+		<thumbnail2>recipe_formats/Premiere_L2_tn.jpg</thumbnail2>
+	</format>
+	<format>
+		<name>Traditional</name>
+		<description>Traditional: Available in both continued and not continued</description>
+		<flag>both</flag>
+		<image1>recipe_formats/Traditional_L1.jpg</image1>
+		<image2>recipe_formats/Traditional_L2.jpg</image2>
+		<thumbnail1>recipe_formats/Traditional_L1_tn.jpg</thumbnail1>
+		<thumbnail2>recipe_formats/Traditional_L2_tn.jpg</thumbnail2>
+	</format>
+	<format>
+		<name>Welcome Home</name>
+		<description>Welcome Home: Available in both continued and not continued</description>
+		<flag>both</flag>
+		<image1>recipe_formats/WelcomeHome_L1.jpg</image1>
+		<image2>recipe_formats/WelcomeHome_L2.jpg</image2>
+		<thumbnail1>recipe_formats/WelcomeHome_L1_tn.jpg</thumbnail1>
+		<thumbnail2>recipe_formats/WelcomeHome_L2_tn.jpg</thumbnail2>
+	</format>
+	
+</formats>

@@ -1,0 +1,265 @@
+#form_container{
+	height:850px!important;
+}
+.museo_slab_500{
+	color:#fff;
+}
+.left-logo{
+	margin: 30px 50px 0 0; 
+	float: right;
+}
+em{
+	color:#FF0000;
+}
+
+.form-field {
+    width: 98%;
+    border: 1px solid #BBB;
+    color: #4E4E4E;
+    background-color: #FFF!important;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1) inset;
+    border-radius: 4px;
+    padding: 10px !important;
+    font-size: 1em;
+	margin-bottom:10px;
+}
+#next_bottom{
+	background-color: #228B22;
+	font-size:15px;
+	border-radius: 10px;
+    padding: 7px 13px 6px 19px;
+}
+.header-form{
+	text-align:center;
+	font-size: 22px;
+    background-color: #D3D3D3;
+    margin-bottom: 20px;
+    padding: 8px 0 8px 0;
+    border-radius: 12px;
+}
+.alert{
+	text-align:center!important;
+}
+button{
+	background:none!important;
+}
+.radio-field{
+	padding-bottom : 15px;
+}
+.custom-error{
+	color:#FF0000;
+	padding-bottom: 9px;
+    display: block;
+    margin-top: -6px
+}
+
+
+#frame1, #frame0 {
+	background-color: #F7F7F7;
+	margin: 30px auto auto;
+	padding: 10px;
+	width: 750px;
+	border:1px solid #EEE;
+}
+#fade {
+	background: none repeat scroll 0 0 #D3DCE3;
+	display: none;
+	height: 100%;
+	left: 0;
+	opacity: 0.4;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+}
+#centerBox {
+	background-color: #FFFFFF;
+	border: 5px solid #FFFFFF;
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+	display: none;
+	max-height: 480px;
+	overflow: auto;
+	visibility: hidden;
+	width: 710px;
+	z-index: 100;
+}
+.box1 {
+	background: none repeat scroll 0 0 #F3F7FD;
+	border: 1px solid #D3E1F9;
+	font-size: 12px;
+	margin-top: 5px;
+	padding: 4px;
+}
+.button1 {
+	background-color: #FFFFFF;
+	background-image: -moz-linear-gradient(center bottom, #EDEDED 30%, #FFFFFF 83%);
+	border-color: #999999;
+	border-radius: 2px 2px 2px 2px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+	color: #333333;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	height: 25px;
+	line-height: 24px;
+	margin-right: 2px;
+	min-width: 40px;
+	padding: 0 16px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+}
+.button1:hover {
+	text-decoration: underline;
+}
+.button1:active, .a:active {
+	position: relative;
+	top: 1px;
+}
+
+
+#imgContainer {
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+#imgArea {
+	display: inline-block;
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+	position: relative;
+	background-color: #eee;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+#imgArea img {
+	outline: medium none;
+	vertical-align: middle;
+	width: 100%;
+}
+#imgChange {
+	background: url("../img/overlay.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	bottom: 0;
+	color: #2d8ba0;
+	display: block;
+	height: 30px;
+	left: 0;
+	line-height: 32px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	background-color:#d67a7a;
+}
+#imgChange input[type="file"] {
+	bottom: 0;
+	cursor: pointer;
+	height: 100%;
+	left: 0;
+	margin: 0;
+	opacity: 0;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 0;
+}
+/* Progressbar */
+.progressBar {
+	background: none repeat scroll 0 0 #E0E0E0;
+	left: 0;
+	padding: 3px 0;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	display: none;
+}
+.progressBar .bar {
+	background-color: #FF6C67;
+	width: 0%;
+	height: 14px;
+}
+.progressBar .percent {
+	display: inline-block;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 2px;
+	width: 100%;
+}
+.add_more {
+    background: #228b22 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 16px;
+    margin-right: -11px;
+    margin-top: 12px;
+    padding: 5px;
+    text-decoration: none;
+}
+/* Tab CSS */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+.tab a {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+	margin-left:2px;
+	color: #000;
+	text-decoration: none !important;
+}
+.tab a:hover {
+    background-color: #ddd;
+}
+
+.tab a.active {
+    background-color: #ccc;
+}
+
+.clear{
+	margin-top:50px;
+}
+
+
+
+ul li {
+    min-width: 200px;
+}
+.dragging li.ui-state-hover {
+    min-width: 240px;
+}
+.dragging .ui-state-hover a {
+    color:green !important;
+    font-weight: bold;
+}
+.connectedSortable tr, .ui-sortable-helper {
+    cursor: move;
+}
+.connectedSortable tr:first-child {
+    cursor: default;
+}
+.ui-sortable-placeholder {
+    background: yellow;
+}
+
+#form_container {
+	position:inherit;
+	overflow:unset !important;
+}
+
+#base {
+	bottom:0 !important;
+	position:fixed !important;
+}

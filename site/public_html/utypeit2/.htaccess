@@ -1,0 +1,12 @@
+#Header add Access-Control-Allow-Origin "*"
+#Header add Access-Control-Allow-Headers "origin, x-requested-with, content-type, x-prototype-version"
+#Header add Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
+
+#Header set X-Frame-Options "SAMEORIGIN"
+
+#Reset RewriteEngine to not use WordPress's rules
+<IfModule mod_rewrite.c>
+RewriteEngine Off
+RewriteEngine On
+</IfModule>
+

@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #000;
+	margin: 0;
+}
+body {
+	background-color: #CEC9B9;
+	overflow: scroll;
+}
+a:link {
+	color: #333;
+}
+a:visited {
+	color: #360;
+}
+a:hover {
+	color: #0F0;
+}
+a:active {
+	color: #6F6;
+}
+
+a.subheaderLink{
+	color: #FFFFFF;
+}
+
+a.subheaderLink:visited{
+	color: #FFFFFF;
+}
+
+a.subheaderLink:hover{
+	color: #CCCCCC;
+}
+
+td {
+	padding:4px;
+	vertical-align: top;
+}
+
+.item{
+	background-color: #CCCCCC;
+	border: 1px #333333 solid;
+	text-align: center;
+}
+.thename {
+	text-align: center;
+	padding: 4px; 
+	background-color: #FE9F12;
+	border: 1px #333 solid;
+	border-bottom: 0;
+	font-weight: bold;
+}
+.headerText {
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFF;
+}
+.blankLI
+{
+	padding: 4px;
+	margin: 4px;
+	background: #FFF;
+}
+.popHeader
+{
+	background-color: #568184;
+	color: #fff;
+	height: 50px;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 4px;
+}
+.popTopLeft
+{
+	background-color: #85B1B5;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 4px;
+}
+.popTopRight
+{
+	background-color: #85B1B5;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 4px;
+}
+.popTopLeft a,.popTopRight a
+{
+	color: #fff;
+}
+input,select {
+	font-size: 12px;
+	border: 1px #333 solid;
+	background-color: #CCD6BA;
+	padding: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+input[type='submit']
+{
+	background-color: #669900;
+	color: #FFF;
+	font-weight: bold;
+}
+
+input[type='image']
+{
+	padding: 0px;
+	border: none;
+	background: none;
+	vertical-align: middle;
+}
+
+.baseRow
+{
+	text-align: center;
+	font-size: 11px;
+	padding: 8px;
+}

@@ -1,0 +1,5 @@
+<?php
+$base = "";
+
+$contentFooter = $base;
+?>

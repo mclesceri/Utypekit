@@ -1,0 +1,19 @@
+.ms500_h1 {
+	font-family: MuseoSlab-500;
+	font-size: 18pt;
+	text-shadow: #333333 -1px 1px 2px;
+}
+.ms500i_h1 {
+	font-family: MuseoSlab-500Italic;
+	font-size: 18pt;
+	text-shadow: #333333 -1px 1px 2px;
+}
+.mn500_h3 {
+	font-family: MuseoSans-500;
+	font-size: 14px;
+	text-shadow: #333333 -1px 1px 2px;
+}
+.ms300_h4 {
+	font-family: Museo-500;
+	font-size: 12px;
+}

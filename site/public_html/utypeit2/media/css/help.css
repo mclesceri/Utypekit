@@ -1,0 +1,73 @@
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.25em;
+}
+td,th
+{
+	padding: 4px;
+}
+th
+{
+	font-weight: bold;
+}
+p
+{
+	margin: 5px;
+	text-indent:  2em;
+}
+strong
+{
+	font-weight: bold;
+}
+em
+{
+	font-style: italic;
+}
+.centSaverSection
+{
+	background: rgba(208,255,216,.6) url(../images/cent_mark.png) no-repeat right top;
+	margin-top: 10px;
+	padding: 30px 10px 10px 10px;
+}
+.designerOptionSection
+{
+	display: block;
+	clear: both;
+	background: rgba(154,220,244,.6) url(../images/designer_mark.png) no-repeat right top;
+	margin-top: 10px;
+	padding: 30px 10px 10px 10px;
+}
+.designeroption_off
+{
+	background: rgba(154,220,244,.6);
+}
+.designeroption_on
+{
+	background: rgba(154,220,244,.6) url(../images/designer_mark.png) no-repeat right center;
+}
+.label
+{
+	font-size: .8em;
+	color: #666666;
+}
+ul
+{
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+	width: 45%;
+}
+ul li
+{
+	line-height: 30px;
+	border-bottom: 1px #333333 solid;
+}
+ul li img
+{
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}

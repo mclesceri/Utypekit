@@ -1,0 +1,249 @@
+#feedback
+{
+	display: block;
+	position: relative;
+	width: 790px;
+	height: 20px;
+	margin: 0;
+	padding: 5px;
+	background: #CCCCCC;
+	border-bottom: 1px #333333 solid;
+	text-align: left;
+	line-height: 20px;
+	color: #FF0000;
+	font-weight: bold;
+	z-index: 5;
+}
+#order_options_navigation
+{
+	display: block;
+	position: relative;
+	width: 800px;
+	height: 25px;
+	padding: 10px 0 0 0;
+	/*background: #4B63AE;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2A3863', endColorstr='#4B63AE'); /* for IE */
+	/*background: -webkit-gradient(linear, left top, left bottom, from(#2A3863), to(#4B63AE)); /* for webkit browsers */
+	/*background: -moz-linear-gradient(top,  #2A3863,  #4B63AE); /* for firefox 3.6+ */
+	/*border-bottom: 1px #333333 solid;*/
+	text-align: left;
+	border-bottom: 1px #333333 solid;
+}
+#order_options_navigation ul
+{
+	list-style-type: none;
+	margin: 0 0 0 5px;
+	padding: 0;
+}
+#order_options_navigation ul li
+{
+	display: inline-block;
+	width: 130px;
+	height: 25px;
+	margin: 0 5px 0 0;
+	font-weight: bold;
+	border-radius: 4px 4px 0 0;
+	box-shadow: 0 1px 1px #666666;
+	font-size: 12px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 12px;
+	cursor: pointer;
+}
+#order_options_navigation ul li:hover
+{
+	color: #000000;
+	background: #B2CAE8;
+}
+#order_options_navigation .inactive
+{
+	color: #2A3863;
+	background: #749DD2;
+}
+#order_options_navigation .active
+{
+	color: #000000;
+	background: #B2CAE8;
+}
+#order_options_container
+{
+	display: block;
+	position: relative;
+	margin: 0 0 30px 0;
+	padding: 0;
+	width: 800px;
+	overflow: hidden;
+	border-bottom: 1px #333333 solid;
+	background: #DDDDDD;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#999999', endColorstr='#DDDDDD'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(#DDDDDD)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #999999,  #DDDDDD); /* for firefox 3.6+ */
+}
+#order_options_container table
+{
+	width: 799px;
+	margin: 0 0 0 1px;
+	padding: 0;
+	border-collapse: collapse;
+	border: none;
+}
+#order_options_container table td,th
+{
+	padding: 4px;
+}
+#order_options_container table th
+{
+	height: 20px;
+	line-height: 20px;
+	background: rgb(153,212,219);
+	background: rgba(153,212,219,.5);
+	border: 1px #99D4DB solid;
+	border-bottom: 1px #333333 solid;
+	text-align: center;
+	color: #568184;
+	font-weight: bold;
+}
+#order_options_container table th a
+{
+	background: #4B63AE;
+	border: 1px #333333 solid;
+	text-align: center;
+	color: #EFEFEF;
+	padding: 4px 8px 4px 8px;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+#order_options_container table th a:hover
+{
+	background: #749DD2;
+	color: #FFFFFF;
+}
+.orderOption
+{
+	display: inline-block;
+	float: left;
+	width: 800px;
+	padding: 0;
+	margin: 0 5px 0 0;
+}
+.odd
+{
+	background: rgb(229,252,255);
+	background: rgba(229,252,255,.5);
+}
+.even
+{
+	background: rgb(255,255,255);
+	background: rgba(255,255,255,.6);
+}
+.b-bottom
+{
+	border-bottom: 1px #CCCCCC solid;
+}
+.b-left
+{
+	border-left: 1px #CCCCCC solid;
+
+}
+.b-right
+{
+	border-right: 1px #CCCCCC solid;
+}
+.centsaver_off
+{
+	background: rgba(208,255,216,.8);
+}
+.centsaver_on
+{
+	background: rgba(208,255,216,.8) url(../images/cent_mark.png) no-repeat right center;
+}
+.designeroption_off
+{
+	background: rgba(154,220,244,.6);
+}
+.designeroption_on
+{
+	background: rgba(154,220,244,.6) url(../images/designer_mark.png) no-repeat right center;
+}
+#order_edit_save
+{
+	display: block;
+	position: relative;
+	top: -30px;
+	text-align: right;	
+	width: 790px;
+	height: 30px;
+	margin: 0;
+	padding: 5px;
+	z-index: 10;
+}
+#recipe_formats
+{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 500px;
+	height: 300px;
+	padding: 0;
+	text-align: center;
+}
+#format_slider
+{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 500px;
+	height: 250px;
+	padding: 0;
+	overflow: hidden;
+}
+#formats
+{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 5000px;
+	height: 250px;
+}
+#formats p
+{
+	line-height: 2em;
+	margin: 0;
+	padding: 5px;
+	height: 15px;
+}
+.format
+{
+	display: inline-block;
+	width: 500px;
+	height:300px;
+	float: left;
+}
+#format_buttons
+{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 80px;
+	width: 400px;
+	height: 30px;
+	float: left;
+}
+#format_buttons button
+{
+	border: 1px #333 solid;
+	background: #639499;
+	color: #FFFFFF;
+	width: 150px;
+	float: left;
+	margin: 0 10px 0 10px;
+}
+#format_button_spacer
+{
+	display: block;
+	width: 250px;
+}

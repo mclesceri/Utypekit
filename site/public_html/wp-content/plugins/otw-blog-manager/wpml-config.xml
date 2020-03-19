@@ -1,0 +1,12 @@
+<wpml-config>
+  <admin-texts>
+    <key name="otw_bm_lists">
+      <key name="otw-bm-list">
+        <key name="otw-bm-list-*">
+          <key name="view_all_page_text"/>
+          <key name="continue_reading"/>
+        </key>
+      </key>
+    </key>
+  </admin-texts>
+</wpml-config>

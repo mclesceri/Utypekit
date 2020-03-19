@@ -1,0 +1,87 @@
+/*
+ *
+ * Custom CSS
+ *
+ */
+a {
+	color: #9db75f;
+}
+body .m-header {
+	height: 50px;
+}
+.loginheader{position: fixed;top:0px;z-index: 99;}
+.rightlogo{padding-top:25px;}
+.m-brand.m-brand--skin-dark, .m-aside-left.m-aside-left--skin-dark {
+	background-color: #08ca2;
+	background: rgb(0,85,102);
+	background: -moz-linear-gradient(left,rgba(0,85,102,1) 0%,rgba(0,140,162,1) 100%);
+	background: -webkit-linear-gradient(left,rgba(0,85,102,1) 0%,rgba(0,140,162,1) 100%);
+	background: linear-gradient(to right,rgba(0,85,102,1) 0%,rgba(0,140,162,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#005566',endColorstr='#008ca2',GradientType=1);
+}
+body.m-aside-left--skin-dark .m-header .m-header-head {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.m-brand.m-brand--skin-dark .m-brand__tools .m-brand__toggler span::after, .m-brand.m-brand--skin-dark .m-brand__tools .m-brand__toggler span::before, .m-brand.m-brand--skin-dark .m-brand__tools .m-brand__toggler span {
+	background: #fff;
+}
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item.m-menu__item--active > .m-menu__heading .m-menu__link-icon, .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item.m-menu__item--active > .m-menu__link .m-menu__link-icon, .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item.m-menu__item--active > .m-menu__heading .m-menu__link-text, .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item.m-menu__item--active > .m-menu__link .m-menu__link-text, .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item > .m-menu__heading .m-menu__link-icon, .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item > .m-menu__link .m-menu__link-icon, .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item > .m-menu__heading .m-menu__link-text, .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item > .m-menu__link .m-menu__link-text {
+	color: #fff;
+}
+.rightheader {
+	background: #9db75f;
+	padding: 10px;
+}
+.m-aside-menu .m-menu__nav {
+	margin-top: 50px;
+}
+button {
+	cursor: pointer;
+	text-align: center;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	background-color: #FCBA63;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FCBA63', endColorstr='#F37043');
+	background: -webkit-gradient(linear, left top, left bottom, from(#FCBA63), to(#F37043));
+	background: -moz-linear-gradient(top, #FCBA63, #F37043);
+	font-size: 14px;
+	line-height: 16px;
+	padding: 5px;
+	color: #FFFFFF;
+	/* font-family: Museo-700; */
+	/* text-shadow: 0 1px 2px #000000; */
+	border: 1px #333333 solid;
+	border-radius: 4px;
+	width: 100%;
+	text-transform: uppercase;
+}
+body button:hover {
+	text-shadow: none;
+	color: #000000;
+	background: #FCBA63;
+}
+@media (min-width: 1025px){
+	.m-brand__logo {
+		position: absolute;
+		z-index: 999;
+		max-width: 250px;
+		text-align: center;
+		left: 0;
+		right: 0px;
+		top: 30px;
+	}
+	#m_ver_menu {
+		position: absolute;
+		left: 0px;
+		max-width: 250px;
+		top: 120px;
+		color: #fff;
+		z-index: 999;
+	}
+	body.m-header--fixed .m-body {
+		padding-top: 30px !important;
+	}
+}

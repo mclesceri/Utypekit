@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #000;
+	margin: 0;
+}
+
+td {
+	padding: 4px;
+}
+
+body {
+	background-color: #FFF;
+	overflow: scroll;
+}
+
+a:link {
+	color: #333;
+}
+
+a:visited {
+	color: #360;
+}
+
+a:hover {
+	color: #0F0;
+}
+
+a:active {
+	color: #6F6;
+}
+.container
+{
+	display: block;
+	position: relative;
+	width: 800px;
+	padding: 5px;
+	margin: 0 auto;
+}
+.formTitle
+{
+	background-color: #000;
+	font-weight: bold;
+	color: #fff;
+}
+
+.formSubtitle
+{
+	background-color: #666;
+	font-weight: bold;
+	color: #fff;
+	border-bottom: 1px #333333 solid;
+}
+
+.formLabel
+{
+	text-align: right;
+	vertical-align: middle;
+	font-size: 11px;
+	color: #666666;
+}
+
+.formInput
+{
+	text-align: left;
+}
+
+.formRight
+{
+	text-align: right;
+}
+
+.formCenter
+{
+	text-align: center;
+}
+
+.listTitleBar
+{
+	display: block;
+	background-color: #CCC;
+	padding: 5px;
+	color: #000000;
+}
+
+.listTitleBarItem
+{
+	display: inline-block;
+	width: 40%;
+	height:20px;
+	padding: 8px;
+	vertical-align: middle;
+}
+
+.listTable
+{
+	width: 100%;
+	border-collapse: collapse;
+	border: 0;
+}
+
+.listItem
+{
+	padding: 4px;
+	border-bottom: 1px #333 solid;
+}
+
+.listHeader
+{
+	padding: 4px;
+	border-bottom: 1px #333 solid;
+	background-color: #333;
+	color: #FFF;
+}
+
+.listHeader a
+{
+	color: #FFF;
+}
+
+.listHeader a:visited
+{
+	color: #FFF;
+}
+#category_sections ul
+{
+	list-style-type: square;
+	margin: 0 0 0 5px;
+	list-style-position: inside;
+}
+#category_sections ul ul
+{
+	list-style-type: circle;
+	margin: 0 0 0 5px;
+}

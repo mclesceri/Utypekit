@@ -1,0 +1,76 @@
+th
+{
+	background: #1d1e59;
+	padding: 4px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 14px;
+	border-bottom: 1px #333333 solid;
+}
+#list_item label
+{
+	color: #333;
+}
+.listContainer
+{
+	width: 800px;
+	margin-top: 50px;
+}
+.listTable
+{
+	width: 800px;
+	margin-bottom: 60px;
+}
+.listHeader
+{
+	background-color: #568184;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 4px;
+}
+.listTitleBar
+{
+	display: block;
+	float: left;
+	height: 30px;
+	width: 800px;
+	padding: 4px;
+	margin-bottom: 7px;
+	color: #333;
+}
+.listTitleBarItem
+{
+	display: inline-block;
+	float: left;
+}
+.listItem
+{
+	border-bottom: 1px #666666 solid;
+	padding: 4px;
+	vertical-align: middle;
+}
+.listItemActive
+{
+	border-bottom: 1px #666666 solid;
+	background-color:  #C3D4E5;
+	padding: 4px;
+	vertical-align: middle;
+}
+.listEdit
+{
+	display: block;
+	background-color: #B8D67E;
+	border-bottom: 1px #666666 solid;
+	padding: 4px;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+	border-radius: 4px;
+}
+.listEdit:hover
+{
+	color: #FFFFFF;
+	background-color: #9eb35c;
+}

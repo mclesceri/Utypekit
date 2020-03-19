@@ -1,0 +1,54 @@
+#proof_table
+{
+	width: 450px;
+}
+.special
+{
+	display: block;
+	width: 280px;
+	margin: 0 20px 0 20px;
+	padding: 10px;
+	float: right;
+	background: #009eac;
+	background-image: linear-gradient(bottom, rgb(53,143,137) 4%, rgb(0,105,105) 52%);
+	background-image: -o-linear-gradient(bottom, rgb(53,143,137) 4%, rgb(0,105,105) 52%);
+	background-image: -moz-linear-gradient(bottom, rgb(53,143,137) 4%, rgb(0,105,105) 52%);
+	background-image: -webkit-linear-gradient(bottom, rgb(53,143,137) 4%, rgb(0,105,105) 52%);
+	background-image: -ms-linear-gradient(bottom, rgb(53,143,137) 4%, rgb(0,105,105) 52%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.04, rgb(53,143,137)),
+		color-stop(0.52, rgb(0,105,105))
+	);
+	box-shadow: inset #003735 0 0 50px;
+	border-radius: 10px;
+	color: #EFEFEF;
+	text-align: center;
+}
+.special h1
+{
+	font-size: 28px;
+}
+.special h2
+{
+	font-size: 21px;
+	font-family: MuseoSlab-500Italic;
+}
+	.emphasis
+	{
+		color: #00ff4e;
+		text-shadow: 1px 2px 1px #003a43;
+	}
+.special p
+{
+	font-family: Museo;
+	font-size: 18px !important;
+	font-style: italic;
+}
+.special a
+{
+	color: #FFFFFF;
+}

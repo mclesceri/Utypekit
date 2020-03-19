@@ -1,0 +1,91 @@
+/* ORDERED LIST*/
+.orderListTitle
+{
+    display: block;
+    position: relative;
+	width: 392px;
+	margin: 0 auto;
+	margin-bottom: 4px;
+	padding: 4px;
+	text-align: center;
+}
+.orderListContainer
+{
+	display: block;
+	width: 400px;
+}
+.orderList
+{
+    width: 98%;
+	background-color: #CCD6BA;
+	border: 1px #333 solid;
+}
+.orderListSection
+{
+	display: block;
+	margin: 2px;
+	margin-bottom: 4px;
+	padding: 2px;
+	vertical-align: middle;
+	background-color: #999999;
+	border: 1px #333333 solid;
+}
+.orderListButton
+{
+	display: block;
+	clear: both;
+	margin: 2px;
+	font-size: 10px;
+}
+.categoryControls
+{
+	display: inline-block;
+	width: 100px;
+	float: right;
+	text-align: right;
+}
+#category input[type='text']
+{
+	width: 200px;
+}
+.orderListSectionActive
+{
+	display: block;
+	margin: 2px;
+	padding: 2px;
+	margin-bottom:4px;
+	vertical-align: middle;
+	background-color: #6699CC;
+	border: 1px #1D4D7C solid;
+}
+.orderListSubSection
+{
+	padding-left: 15px;
+	padding-top: 2px;
+	background-color: #CCCCCC;
+}
+.orderListSubSectionActive
+{
+	padding-left: 15px;
+	padding-top: 2px;
+	background-color: #B5CDE5;
+}
+.subcategoryControls
+{
+	display: inline-block;
+	width: 100px;
+	float: right;
+}
+#subcategory input
+{
+	width: 280px;
+}
+.handle
+{
+	margin: 0 0 0 20px;
+}
+.childList
+{
+	border: 1px #333 solid;
+	background: #85B1B5;
+}
